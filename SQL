@@ -1,7 +1,7 @@
 # skill-tree
 SQL 
 
-1--------------------------------------------------------------------------------------------------------------------------------
+1----------------------------------------------------------------------------------------------------------------------------------
 Adults only (SQL for Beginners #1)
 https://www.codewars.com/kata/590a95eede09f87472000213
 In your application, there is a section for adults only. You need to get a list of names and ages of users from the users table, who are 18 years old or older.
@@ -27,3 +27,13 @@ SELECT * FROM travelers
   WHERE country IN ('Italy', 'Spain', 'France', 'Egypt', 'Argentina', 'China');
 best:
 Select name,country from travelers where country not in ('Canada','Mexico','USA')
+
+3------------------------------------------------------------------------------------------------------------------------------------
+Register for the Party (SQL for Beginners #3)
+https://www.codewars.com/kata/590cc86f7557c0494000007e
+You received an invitation to an amazing party. Now you need to write an insert statement to add yourself to the table of participants.
+participants table schema
+name (string)
+age (integer)
+attending (boolean)
+my:
