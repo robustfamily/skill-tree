@@ -21,11 +21,26 @@ my: SELECT * FROM travelers
       WHERE country IN ('Italy', 'Spain', 'France', 'Egypt', 'Argentina', 'China'); /* IN - в, перечисление нужных ячеек таблицы */
 best: Select name,country from travelers where country not in ('Canada','Mexico','USA') /* not in - все ячейки таблицы кроме следующих */ 
 
-Урок 3 ----------------------------------------------------------------------------------------------------------------------------------
+Урок 3 учим: INSERT (вставка), INTO (в), VALUES (значение) ------------------------------------------------------------------------------
 Register for the Party (SQL for Beginners #3) https://www.codewars.com/kata/590cc86f7557c0494000007e
 You received an invitation to an amazing party. Now you need to write an insert statement to add yourself to the table of participants.
 participants table schema
 name (string)
 age (integer)
 attending (boolean)
-my:
+my: INSERT INTO participants
+      VALUES ('Roman', '28', 'true');
+        SELECT * FROM participants;
+best: INSERT INTO participants VALUES ('mozart', '26', true);
+      SELECT * FROM participants;
+      
+Урок 4 учим: -----------------------------------------------------------------------------------------------------------------
+Collect Tuition (SQL for Beginners #4) https://www.codewars.com/kata/5910b0d378cc2ba91400000b
+You are working for a local school, and you are responsible for collecting tuition from students. You have a list of all students, some of them have already paid tution and some haven't. Write a select statement to get a list of all students who haven't paid their tuition yet. The list should include all the data available about these students.
+students table schema
+name (string)
+age (integer)
+semester (integer)
+mentor (string)
+tuition_received (Boolean)
+my: 
