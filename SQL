@@ -6,11 +6,9 @@ In your application, there is a section for adults only. You need to get a list 
 users table schema
 name
 age
-my:
-SELECT * FROM users /*выбрать * от (название таблицы) */
-  WHERE age BETWEEN 18 AND 999; /* где (шапка столбца) между х и у */
-best:
-SELECT name, age FROM users WHERE age >= 18; /* выбрать (шапка столбца 1), (шапка столбца 2) от (название таблицы) где (шапка столбца 2) >= (значение столбца) */ 
+my: SELECT * FROM users /*выбрать * от (название таблицы) */
+      WHERE age BETWEEN 18 AND 999; /* где (шапка столбца) между х и у */
+best: SELECT name, age FROM users WHERE age >= 18; /* выбрать (шапка столбца 1), (шапка столбца 2) от (название таблицы) где (шапка столбца 2) >= (значение столбца) */ 
 
 Урок 2 учим: IN (в, перечисление нужных ячеек таблицы), NOT IN (все ячейки таблицы кроме следующих) -----------------------------------
 On the Canadian Border (SQL for Beginners #2) https://www.codewars.com/kata/590ba881fe13cfdcc20001b4
@@ -19,15 +17,12 @@ Select names, and countries of origin of all the travelers, excluding anyone fro
 travelers table schema
 name
 country
-my:
-SELECT * FROM travelers
-  WHERE country IN ('Italy', 'Spain', 'France', 'Egypt', 'Argentina', 'China'); /* IN - в, перечисление нужных ячеек таблицы */
-best:
-Select name,country from travelers where country not in ('Canada','Mexico','USA') /* not in - все ячейки таблицы кроме следующих */ 
+my: SELECT * FROM travelers
+      WHERE country IN ('Italy', 'Spain', 'France', 'Egypt', 'Argentina', 'China'); /* IN - в, перечисление нужных ячеек таблицы */
+best: Select name,country from travelers where country not in ('Canada','Mexico','USA') /* not in - все ячейки таблицы кроме следующих */ 
 
-3------------------------------------------------------------------------------------------------------------------------------------
-Register for the Party (SQL for Beginners #3)
-https://www.codewars.com/kata/590cc86f7557c0494000007e
+Урок 3 ----------------------------------------------------------------------------------------------------------------------------------
+Register for the Party (SQL for Beginners #3) https://www.codewars.com/kata/590cc86f7557c0494000007e
 You received an invitation to an amazing party. Now you need to write an insert statement to add yourself to the table of participants.
 participants table schema
 name (string)
