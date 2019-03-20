@@ -2,7 +2,7 @@
 
 SQL 
 
-1 -----------------------------------------------------------------------------------------------------------------------
+1 
 Adults only (SQL for Beginners #1)
 https://www.codewars.com/kata/590a95eede09f87472000213
 
@@ -13,12 +13,12 @@ age
 
 my:
 SELECT * FROM users
-WHERE age BETWEEN 18 AND 999
+  WHERE age BETWEEN 18 AND 999;
 
 best:
 SELECT name, age FROM users WHERE age >= 18;
 
-2 -----------------------------------------------------------------------------------------------------------------------
+2
 On the Canadian Border (SQL for Beginners #2)
 https://www.codewars.com/kata/590ba881fe13cfdcc20001b4
 
@@ -29,7 +29,8 @@ name
 country
 
 my:
-SELECT * FROM travelers WHERE country IN ('Italy', 'Spain', 'France', 'Egypt', 'Argentina', 'China')
+SELECT * FROM travelers
+  WHERE country IN ('Italy', 'Spain', 'France', 'Egypt', 'Argentina', 'China');
 
 best:
 Select name,country from travelers where country not in ('Canada','Mexico','USA')
